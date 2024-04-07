@@ -10,7 +10,6 @@ const Login = () => {
   const router = useRouter();
 
   useEffect(() => {
-    console.log("session:", session);
     if (session?.user) {
       router.push("/");
     }
